@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jalaan Fields | Data Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="hero">
+      <h1>Jalaan Fields</h1>
+      <p class="subtitle">Data Science • Data Engineering • Analytics Engineering</p>
+      <div class="links">
+        <a class="btn" href="https://www.linkedin.com/in/jalaan-fields/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="YOUR_GITHUB_PROFILE_LINK" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="YOUR_RESUME_LINK" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <h2>Featured Project</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Netflix-Style Analytics Platform</h3>
+          <p class="tags">Python • SQL • Parquet • DuckDB • dbt • Streamlit</p>
+        </div>
+
+        <p>
+          Built an end-to-end streaming analytics platform: event ingestion → partitioned data lake → warehouse →
+          dbt models (staging/core/marts) → interactive KPI dashboard.
+        </p>
+
+        <ul>
+          <li>Generated 200K+ streaming events and reference dimensions</li>
+          <li>Partitioned Parquet data lake by event_date</li>
+          <li>Modeled star schema + KPI marts with dbt and tests</li>
+          <li>Streamlit dashboard for daily KPIs and top titles</li>
+        </ul>
+
+        <div class="card-actions">
+          <a class="btn" href="YOUR_GITHUB_REPO_LINK" target="_blank" rel="noreferrer">View Code</a>
+          <a class="btn secondary" href="YOUR_LIVE_DASHBOARD_LINK" target="_blank" rel="noreferrer">Live Demo (optional)</a>
+        </div>
+
+        <div class="img-grid">
+          <img src="./assets/netflix-dashboard.png" alt="Dashboard screenshot" />
+          <img src="./assets/netflix-dbt-build.png" alt="dbt build screenshot" />
+          <img src="./assets/netflix-architecture.png" alt="Architecture screenshot" />
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        I build end-to-end data products—from pipelines and warehouses to analytics layers and dashboards—
+        with a focus on clean design, reproducibility, and business impact.
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="y"></span> Jalaan Fields</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
