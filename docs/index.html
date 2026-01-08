@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header class="wrap">
+  <header class="wrap">    
     <div class="hero">
       <h1>Jalaan Fields</h1>
       <p class="subtitle">Data Science • Data Engineering • Analytics Engineering</p>
@@ -20,6 +20,23 @@
   </header>
 
   <main class="wrap">
+  <article class="card">
+  <h3>Netflix-Style Analytics Platform</h3>
+  <p class="tags">Python • SQL • DuckDB • dbt • Streamlit</p>
+
+  <img src="./assets/netflix/dashboard.png" alt="Netflix analytics dashboard" />
+
+  <p>
+    End-to-end streaming analytics platform with event ingestion,
+    data lake partitioning, dbt transformations, and KPI dashboard.
+  </p>
+
+  <div class="card-actions">
+    <a class="btn" href="#netflix">View details</a>
+    <a class="btn secondary" href="YOUR_GITHUB_REPO_LINK">Code</a>
+  </div>
+</article>
+  
     <section class="section">
       <h2>Featured Project</h2>
 
@@ -61,6 +78,25 @@
         with a focus on clean design, reproducibility, and business impact.
       </p>
     </section>
+    <section id="netflix" class="section">
+  <h2>Netflix-Style Analytics Platform</h2>
+
+  <p><strong>Problem:</strong> Understand streaming engagement at scale.</p>
+  <p><strong>Solution:</strong> Built a lake → warehouse → dbt → dashboard pipeline.</p>
+
+  <ul>
+    <li>Generated 200K+ streaming events</li>
+    <li>Partitioned Parquet data lake</li>
+    <li>Star-schema analytics models</li>
+    <li>Interactive Streamlit KPI dashboard</li>
+  </ul>
+
+  <div class="img-grid">
+    <img src="./assets/netflix/dashboard.png" />
+    <img src="./assets/netflix/dbt-build.png" />
+    <img src="./assets/netflix/structure.png" />
+  </div>
+</section>
   </main>
 
   <footer class="wrap footer">
